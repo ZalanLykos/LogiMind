@@ -35,7 +35,7 @@ LogiMind is a comprehensive logistics intelligence platform that provides real-t
 ## Screenshots
 
 > [Screenshots.pdf](ScreenShots.pdf)
-> > ![Dashboard](dashboard.jpg)
+ ![Dashboard](dashboard.jpg)
 
 ---
 
