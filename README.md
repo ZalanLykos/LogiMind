@@ -51,7 +51,7 @@ LogiMind is a comprehensive logistics intelligence platform that provides real-t
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/logimind.git
+git clone https://github.com/ZalanLykos/LogiMind.git
 cd logimind
 
 # Install dependencies
