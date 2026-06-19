@@ -1,0 +1,86 @@
+============================================================
+  LogiMind - GitHub Repository Upload Guide
+  What to include and exclude for open source
+============================================================
+
+REQUIRED FILES TO UPLOAD:
+-------------------------
+
+Root level files:
+  - package.json          (project config, scripts, dependencies)
+  - package-lock.json     (dependency lock file)
+  - tsconfig.json         (TypeScript config)
+  - tsconfig.app.json     (TypeScript app config)
+  - tsconfig.node.json    (TypeScript node config)
+  - vite.config.ts        (Vite bundler config)
+  - tailwind.config.js    (Tailwind CSS config)
+  - postcss.config.js     (PostCSS config)
+  - eslint.config.js      (ESLint config)
+  - index.html            (HTML entry point)
+  - server.js             (Express backend server)
+  - Database.json         (sample/empty database file)
+  - README.md             (project documentation)
+  - .gitignore            (git ignore rules)
+
+Source code folders:
+  - src/                  (all React/TypeScript source files)
+    - src/App.tsx
+    - src/main.tsx
+    - src/components/     (all UI components)
+    - src/data/           (data generators and product data)
+    - src/types/          (TypeScript type definitions)
+    - src/utils/          (utility functions)
+    - src/assets/         (static assets like images)
+
+Electron files:
+  - electron/
+    - electron/main.js    (Electron main process)
+    - electron/preload.js (Electron preload script)
+
+Build scripts:
+  - scripts/
+    - scripts/dev.js      (dev server startup script)
+
+Public assets:
+  - public/
+    - public/logo.png     (app logo)
+    - public/vite.svg     (Vite logo, optional)
+
+Build configuration:
+  - build/
+    - build/icon.png      (app icon for installer/window)
+
+
+FILES/FOLDERS TO EXCLUDE (already in .gitignore):
+-------------------------------------------------
+  - node_modules/         (npm dependencies - too large, auto-installed)
+  - dist/                 (Vite build output - generated files)
+  - release/              (Electron installer output - generated files)
+  - .git/                 (git internal folder)
+  - *.log                 (log files)
+
+
+OPTIONAL BUT RECOMMENDED:
+--------------------------
+  - .gitignore            (already exists, keeps repo clean)
+  - LICENSE.txt           (add your license file for open source)
+  - CONTRIBUTING.md       (contribution guidelines)
+  - CHANGELOG.md          (version history)
+
+
+QUICK SETUP FOR CLONING:
+------------------------
+After cloning, run:
+  1. npm install
+  2. npm run dev        (for web browser version)
+  3. npm run electron:dev  (for desktop app)
+
+
+NOTE:
+-----
+- Database.json contains sample data (3650 records). You may want
+  to include an empty version or a small sample for the repo.
+- The LogiMind.png file you provided should be kept in the root
+  as the source logo, with copies in build/ and public/.
+- Keep node_modules/ out of git - it's in .gitignore already.
+- The release/ folder contains built installers - do not upload.
